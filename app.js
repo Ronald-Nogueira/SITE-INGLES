@@ -9,12 +9,12 @@ hamburger.addEventListener("click", () => nav.classList.toggle("active"));
 
 function openModal(modalId) {
   var modal = document.getElementById(modalId);
-  modal.classList.add('active');
+  modal.style.display = "block";
 }
 
 function closeModal(modalId) {
   var modal = document.getElementById(modalId);
-  modal.classList.remove('active');
+  modal.style.display = "none";
 }
 
 window.onclick = function (event) {
@@ -22,7 +22,7 @@ window.onclick = function (event) {
   for (var i = 0; i < modals.length; i++) {
     var modal = modals[i];
     if (event.target == modal) {
-      modal.classList.remove('active');
+      modal.style.display = "none";
     }
   }
 };

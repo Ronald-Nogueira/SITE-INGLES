@@ -92,23 +92,19 @@ a{
 }
 
 main{
-    height: 500px;
+    height: 700px;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
     color: #e9e9e9;
+    margin-bottom: 30px;
 }
 
-main h1{
-    font-size: 50px;
-    text-transform: uppercase;
-}
 
 main .container{
-    background: #e9e9e9;
-    width: 350px;
-    height: 450px;
+    width: 450px;
+    height: 700px;
 
     border-radius: 42px;
     background: #0a0a0a;
@@ -116,15 +112,88 @@ main .container{
                     -10px -10px 19px #0f0f0f;
 
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    flex-direction: column;
     letter-spacing: 2px;
+    padding: 10px;
 }
 
+#container-inicio p{
+    font-size: 13px;
+    text-align: left;
+    
+}
 
+.janela-modal{
+    display: flex;
+    justify-content: space-around;
+}
 
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.616);
+    backdrop-filter: blur(3px);
 
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-out;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    margin: 50% auto;
+  }
+  
+  .modal.active .modal-content {
+    transform: translateY(0);
+  }
 
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    border-bottom: 1px solid #888;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.modal-body p{
+    margin-bottom: 1rem;
+}
+  
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+  
+.close:hover,
+.close:focus {
+    color: #070707;
+}
+  
+.modal-btn {
+    cursor: pointer;
+    padding: 5px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+  
+@media screen and (max-width: 600px) {
+    .modal-content {
+      width: 90%;
+    }
+}
 
 
 

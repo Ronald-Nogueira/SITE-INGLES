@@ -78,6 +78,7 @@ a{
     background: none;
     border-top: 3px solid #131313;
     cursor: pointer;
+    margin: 10px;
 
 }
 
@@ -109,14 +110,14 @@ main .container{
 
     border-radius: 42px;
     background: #e0e0e0;
-    box-shadow:  20px 20px 60px #bebebe,
+    box-shadow:  20px 20px 60px #acacac,
              -20px -20px 60px #ffffff;
 
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     letter-spacing: 2px;
-    padding: 20px;
+    padding: 15px;
 }
 
 #container-inicio p{
@@ -125,73 +126,29 @@ main .container{
     
 }
 
-.janela-modal{
-    display: flex;
-    justify-content: space-around;
-}
 
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.596);
-    backdrop-filter: blur(3px);
-  }
-  
-  .modal-content {
-    background-color: #e0e0e0;
-    margin: 15% auto;
-    padding: 20px;
-    width: 55%;
-    height: 40%;
-    color: #131313;
-    border-radius: 0.5rem;
-    overflow: auto;
-  }
 
-  .modal-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-  }
-  
-.modal-body .paragrafo{
-    margin-bottom: 1rem;
-}
 
-  .close {
-    color: #ccc;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #0a0a0a;
-  }
-  
-  .modal-btn {
+
+
+
+
+
+.modal-btn {
     background: #e0e0e0;
     cursor: pointer;
     --color: #131313;
     display: inline-block;
-    width: 8em;
+    width: 6rem;
     height: 2.6em;
     line-height: 2.5em;
-    margin: 20px;
+    margin: 10px;
     position: relative;
     overflow: hidden;
     border: 1px solid var(--color);
     transition: color .5s;
     z-index: 0;
-    font-size: 17px;
+    font-size: 16px;
     border-radius: 6px;
     font-weight: 500;
     color: var(--color);
@@ -226,51 +183,87 @@ main .container{
     background: #131313;
     transition: background 0s;
    }
-  
 
 
 
-.exemplo{
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    backdrop-filter: blur(1px);
+}
+
+.modal-content {
+    background-color: #e0e0e0;
+    margin: 10% auto;
+    padding: 10px;
+    overflow: auto;
+    width: 60%;
+    height: 60%;
+    border-radius: 10px;
+
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.modal-header{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+
 }
-.exemplo .ln1{
-    margin-right: 40px;
-}
 
 
 
 
 
 
-  @media screen and (max-width: 600px) {
-    .modal-content {
-      width: 80%;
+
+
+
+@media (max-width: 600px) {
+
+    .modal-content{
+        margin: 30% auto;
+        height: 70%;
     }
-  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .janela-modal{
+        display: flex;
+        justify-content: space-around;
+    }
+    .modal-btn{
+        width: 5.5em;
+        margin: 3px;
+    }
+    .modal-content {
+        width: 90%;
+    }
+}
 
 
 

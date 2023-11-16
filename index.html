@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script defer src="app.js"></script>
-
+    <script src="https://kit.fontawesome.com/43bd25d9a0.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <header class="header">
@@ -20,9 +21,9 @@
             <button class="hamburger"></button>
 
             <ul class="nav-list">
-                <li><a href="video.html">Video-Aulas</a></li>
-                <li><a href="questoes.html">Questões</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="video.html"><i class="fa-brands fa-youtube"></i> Video-Aulas</a></li>
+                <li><a href="questoes.html"><i class="fa-solid fa-clipboard-list"></i> Questões</a></li>
+                <li><a href="sobre.html"><i class="fa-solid fa-user"></i> Sobre Nós</a></li>
             </ul>
         </nav>
     </header>
@@ -32,12 +33,19 @@
 
 
 
-    <main>
+    <main class="inicio">
         <div class="container" id="container-inicio">
             <h1>Simple Present</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga in numquam nisi blanditiis ipsa culpa perferendis delectus, illum fugiat laboriosam tempore cupiditate expedita nulla quisquam commodi beatae qui nam deserunt?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, deleniti ipsam maiores voluptatem tempore amet earum nam animi nostrum atque ullam esse, eos illo architecto dolores commodi? In, assumenda dolor.</p>
-            
+            <p>O Simple Present é o tempo verbal utilizado no dia a dia, correspondendo ao presente do indicativo em português. Em inglês, a conjugação dos verbos diferencia-se da língua materna, usando a forma base do verbo em frases afirmativas e o verbo auxiliar "do" em frases negativas e interrogativas. Essa estrutura não envolve conjugação para todas as pessoas, ao contrário do português.</p>
+            <p><b>Quando usar o Simple Present?</b></p>
+            <p>O Simple Present é utilizado em contextos do cotidiano para descrever verdades, fatos, características físicas ou estados emocionais, contar histórias, quantificar a frequência de ações e descrever rotinas e hábitos. Seu uso é abrangente e engloba diversas situações do dia a dia.</p>
+            <p>Observe os seguintes exemplos:</p>
+            <div id="exemplo">
+                <p> - Peter has breakfast at work. Peter toma café no trabalho. <b>(hábito, rotina)</b></p>
+                <p> - The Earth turns around the sun. A terra gira em torno do sol. <b>(fato, verdade)</b></p>
+                <p> - My parents aren’t very tall. Meus pais não são muito altos. <b>(aspecto físico)</b></p>
+                <p> - She seems happy today. Ela parece feliz hoje. <b>(estado emocional)</b></p>
+            </div>
 
 
             <div class="janela-modal">
@@ -54,8 +62,51 @@
                             <span class="close" onclick="closeModal('modal1')">&times;</span>
                         </div>
 
-                        <div id="modal-body">
-                            
+                        <div class="modal-body">
+                            <div class="paragrafo">
+                                <p><b>1 - Conjugação na terceira pessoa do singular (he, she, it)</b></p>
+                                <p>O verbo só será conjugado na terceira pessoa do singular. Isso mesmo! Diferentemente do português, flexionamos o verbo apenas para he, she, it</p>
+                            </div>
+
+                            <div class="paragrafo">
+                                <p><b>2 - Há apenas dois verbos irregulares</b></p>
+                                <p>O verbo to be (ser/estar) e o verbo to have (ter) são irregulares no presente simples:</p>
+                                <div class="exemplo">
+                                    <div class="ln1">
+                                        <p>To be = ser, estar</p>
+                                        <p> - I <b>AM</b></p>
+                                        <p> - you, we, they, <b>ARE</b></p>
+                                        <p> - He, she, it <b>IS</b></p>
+                                    </div>
+                                    <div class="ln2">
+                                        <p>To have = ter</p>
+                                        <p> - I, you, we, they <b>HAVE</b></p>
+                                        <p> - He, she, it <b>HAS</b></p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="paragrafo">
+                                <p><b>3 - Verbo auxiliar do/does</b></p>
+                                <p>O verbo auxiliar do/does é utilizado para indicar um aspecto da oração. No presente simples, ele é utilizado apenas em frases negativas e interrogativas.</p>
+                                <p> - She <b>doesn’t</b> live here. Ela não mora aqui.</p>
+                                <p> - <b>Does</b> she live here? Ela mora aqui?</p>
+
+                            </div>
+
+                            <div class="paragrafo">
+                                <p><b>4 - Regras ortográficas</b></p>
+                                <p>As regras ortográficas aplicam-se exclusivamente à terceira pessoa do singular (he, she, it). Para as outras pessoas, o verbo não se flexiona.</p>
+                                <p>Na maioria dos verbos, <b>acrescenta-se –s</b> (dance, live, talk, feel, get, take, throw):</p>
+                                <p> - She likes. Ela gosta.</p>
+                                <p>Em verbos terminados em –ss, –sh, –ch, –o, –x, <b>acrescenta-se –es</b> (miss, pass, watch, finish, do):</p>
+                                <p> - He washes. Ele lava.</p>
+                                <p>Em verbos terminados em consoante + y, <b>retira-se o –y</b> e, depois, <b>acrescenta-se –ies:</b></p>
+                                <p> - He studies. Ele estuda.</p>
+                                <p>Em verbos terminados em vogal + y, <b>acrescenta-se –s:</b></p>
+                                <p> - She plays. Ela joga.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -69,7 +120,21 @@
                             <span class="close" onclick="closeModal('modal2')">&times;</span>
                         </div>
                         
-                        <div id="modal-body">
+                        <div class="modal-body">
+                            <p><b>Forma Afirmativa</b></p>
+                            <p>Os verbos conjugados no presente simples em frases afirmativas não usam o auxiliar do. Basta colocar o verbo na forma-base e sem a partícula to. Lembre-se de que o verbo flexiona-se com he, she, it.</p>
+                            <img src="imagens/afirmativa.png" alt="">
+
+                            <p><b>Forma negativa</b></p>
+                            <p>Na língua inglesa, o verbo auxiliar do presente simples do indica que uma frase pode ser tanto negativa quanto interrogativa. Dessa forma, ao fazer uma negação, é necessário que o verbo principal seja precedido por do + not ou does + not. Nesse caso, para a terceira pessoa do singular, o does já está flexionado, logo, o verbo principal permanece na sua forma-base e sem a partícula to.
+
+                                Além disso, pode-se usar a forma contraída do auxiliar: don’t ou doesn’t, sobretudo em textos mais informais.</p>
+                            <img src="imagens/negativa.png" alt="">
+                            
+                            <p><b>Forma interrogativa</b></p>
+                            <p>Em perguntas, também utilizamos o auxiliar do. A estrutura de uma pergunta na língua inglesa difere-se de nossa língua materna, porque o verbo (auxiliar) vem no começo da frase, além da pontuação (?)</p>
+                            <img src="imagens/interrogativa.png" alt="">
+                            
 
                         </div>
                     </div>
@@ -84,8 +149,225 @@
                             <span class="close" onclick="closeModal('modal3')">&times;</span>
                         </div>
                         
-                        <div id="modal-body">
+                        <div class="modal-body">
+                            <p><b>What is Vale do Silício?</b></p>
+                            <p>Vale do Silício, akin to Silicon Valley, denotes a region nestled in the
+                                Southern area. The term emerged in Year due to its connection with technology and
+                                innovation. This valley is renowned for hosting a myriad of technology
+                                firms that have chosen it as their headquarters.</p>
 
+                            <p><b>Key Takeaways</b></p>
+                            <p> - Vale do Silício stands as a global epicenter of technological innovation situated in the southern region.</p> 
+                            <p> - It earned its name from its association with technology and innovation.</p>
+                            <p> - Home to numerous major technology, software, and internet companies, including List Key Companies.</p>
+                            <p> - Noteworthy for its status as one of the wealthiest regions globally and a thriving real estate market.</p>
+                                
+                               
+                               
+                               
+
+                            <p><b>Understanding Vale do Silício</b></p>
+                            <p>The term Vale do Silício was initially coined in Year by Journalist's Name, covering the history of
+                                technology and innovation. Over time, it expanded to encompass various technological facets, particularly
+                                in the realm of big tech. </p>
+                            <p>Encompassing an area of 1,850 square miles, Vale do Silício houses around
+                                three million people, covering specified counties and regions. Its largest city is City, and it hosts
+                                esteemed institutions like Stanford University, fostering a robust research and development synergy throughout the valley.
+                                </p>
+                            <p>The region has been a breeding ground for high-profile ventures, attracting substantial venture capital. As of December
+                                2020, the area witnessed Number venture capital-backed initial public offerings valued at approximately $253 billion.
+                                </p>
+
+                            <p><b>Special Considerations</b></p>
+                            <p>
+                                In Year, the median household income in Vale do Silício exceeded that of San Francisco, California, and the
+                                United States. As of 2021, households in Vale do Silício earned an average of $138,804 per year, surpassing
+                                incomes in San Francisco and California.</p>
+                            <p>Forbes reported Number tech billionaires globally with a combined net worth of $1.9 trillion, with the top Number in this sector amassing over $660 billion combined. In 2022,
+                                Vale do Silício was reportedly home to Number billionaires.</p>
+                            <p>However, some business leaders have opted to
+                                relocate their ventures away from Vale do Silício, citing reasons such as the overall political
+                                climate and more lenient COVID-19 restrictions elsewhere.</p>
+
+                            <p><b>A Brief Timeline of Key Silicon Valley Developments</b></p>
+                            <p>1939: William Hewlett and David Packard patent an audio oscillator, forming the foundation for the Hewlett-Packard company.</p>
+                            <p>1940s: William Shockley, John Bardeen, and Walter H. Brattain invent the first working transistor at Bell Labs.</p>
+                            <p>1951: Fred Terman establishes Stanford Research Park as a partnership between Stanford University and the City of
+                                Palo Alto, providing a base of operations for both military and commercial technological innovations for companies
+                                such as Hewlett Packard, Lockheed, and Xerox.</p>
+                            <p>1955: William Shockley opens his own firm, Shockley Semiconductor Laboratory, in Mountain View. Several
+                                Shockley employees resign and start a competing firm, Fairchild Semiconductor. Fairchild employees will later
+                                go on to start many other companies, including Intel and AMD.</p>
+                            <p>1958 to 1960: Robert Noyce and Jack Kilby independently discover that all parts of a circuit, including
+                                the transistor, can be created using silicon. Their discoveries lead to the integrated circuit, created
+                                from silicon, used in all microprocessors today.
+                                </p>
+                            <p>1961: Former Fairchild backer Arthur Rock establishes Davis & Rock, considered the nation's first venture
+                                capital firm, giving rise to a new type of investment industry.</p>
+                            <p>1969: The Arpanet computer network is established with four nodes, including one at Stanford University. Arpanet is
+                                the foundation for the internet.</p>
+                            <p>1971: Journalist Don Hoefler publishes a three-part report on the rise of technological development in
+                                the region in Electronic News, titled "Silicon Valley, U.S.A." He's credited with creating the region's name.
+                                </p>
+                            <p>1970s: Atari, Apple, Microsoft, and Oracle are founded.</p>
+                            <p>1980s: Cisco, Sun Microsystems, and Adobe are founded.</p>
+                            <p>1990s: Netscape, Google, Yahoo, Amazon, PayPal, and Netflix are founded.</p>
+                            <p>2000 to 2010s: Meta, Twitter (now X), and Uber are founded. The incorporated name of Twitter changed
+                                to X Corp. in April 2023. Although the company's name changed, the social media platform's name remains the same.
+                                </p>
+
+                            <p><b>Major Companies in Silicon Valley</b></p>
+                            <p>Apple (AAPL): Founded in 1976 by Steve Jobs, the company is based in Cupertino, Santa Clara County. It reported
+                                revenue of $394.33 billion in 2022. Apple's market capitalization is $2.73 trillion, and its price-to-earnings ratio (P/E) is 29.67.
+                                </p>
+                            <p>Alphabet (GOOGL/GOOG): The company's headquarters, often called The Googleplex, is located in Mountain View in
+                                Santa Clara County. Alphabet reported full-year revenue of $282.84 billion in 2022. It boasts a market cap of $1.66 trillion and a P/E ratio of 27.31.
+                                </p>
+                            <p>Chevron (CVX): This multinational energy corporation calls San Ramon, Contra Costa County home. Chevron
+                                reported $235.72 billion in revenue in 2022. Its market cap is $307 billion, and the company's P/E ratio is 10.06.
+                                </p>
+                            <p>Meta (META): One of the largest social media networks in the world, Meta is headquartered in Menlo Park in San
+                                Mateo County. The company has a market cap of $750.12 billion and a P/E ratio of 34.31. Meta earned $116.61 billion in revenue in 2022.
+                                </p>
+                            <p>Visa (V): Visa provides payment services and is headquartered in San Francisco. The company earned $29.31 billion
+                                in revenue in 2022. Its market cap is $485.08 billion, and it has a P/E ratio of 30.90.
+                                </p>
+                            <p>Wells Fargo (WFC): This financial services company was founded in 1852 and is based in San Francisco. The company
+                                earned $73.78 billion in revenue in 2022. It has a market cap of $155.43 billion and a P/E ratio of 10.53.
+                                </p>
+                            <p>Unless otherwise noted, the figures reported above are as of August 17, 2023.</p>
+                            
+                            <p><b>Where Is Vale do Silício in Location?</b></p>
+                            <p>Vale do Silício is positioned in the southern part of the specified region area, covering an expanse exceeding 1,850 square miles.</p>
+                            
+                            <p><b>What Is Vale do Silício Famous for?</b></p>
+                            <p>Vale do Silício is renowned as a technology hub, housing major companies like List
+                                Key Companies. The region attracts substantial venture capital and is home to some of the world's
+                                wealthiest individuals.</p>
+
+                            <p><b>Which Cities Are Part of Vale do Silício?</b></p>
+                            <p>San Jose is the largest city in Silicon Valley. The region also includes Santa Clara, Redwood City,
+                                Mountain View, Palo Alto, Menlo Park, Cupertino, and Sunnyvale.
+                                
+                                </p>
+
+                            <p><b>What Does Vale do Silício Unicorn Mean?</b></p>
+                            <p>A Vale do Silício unicorn refers to a private startup valued at over $1 billion. This term is commonly
+                                used in the venture capital industry, exemplified by Company Example.
+                                </p>
+
+                            <p><b>The Bottom Line</b></p>
+                            <p>Mentioning Vale do Silício evokes thoughts of innovation and research, reminiscent of the world's
+                                largest technology hub. It stands as the birthplace of numerous tech giants and is unsurprisingly one
+                                of the richest areas globally, boasting Number billionaires as of 2022.</p>
+                            
+                            <div class="modal-questoes">
+                                <p><B>Lista de Questões</B></p>
+                                <p>1. *Where is Vale do Sítio located in California?*</p>
+                                <div class="alternativas">
+                                    <p> - A) Northern California</p>
+                                    <p> - B) Southern California</p>
+                                    <p> - C) Central California</p>
+                                    <p> - D) Eastern California</p>
+                                </div>
+
+                                <p>2. *What was the primary material associated with the adoption of the term "Vale do Sítio"?*</p>
+                                <div class="alternativas">
+                                    <p> - A) Gold</p>
+                                    <p> - B) Silicon</p>
+                                    <p> - C) Copper</p>
+                                    <p> - D) Aluminum</p>
+                                </div>
+
+                                <p>3. *As of 2021, how does the median household income in Vale do Sítio compare to San Francisco and California?*</p>
+                                <div class="alternativas">
+                                    <p> - A) Vale do Sítio is lower</p>
+                                    <p> - B) Vale do Sítio is higher</p>
+                                    <p> - C) Vale do Sítio is the same</p>
+                                    <p> - D) Not mentioned in the text</p>
+                                </div>
+
+                                <p>4. *How many billionaires were reportedly living in Silicon Valley as of 2022?*</p>
+                                <div class="alternativas">
+                                    <p> - A) 38</p>
+                                    <p> - B) 84</p>
+                                    <p> - C) 117</p>
+                                    <p> - D) 313</p>
+                                </div>
+
+                                <p>5. *What event in 1971 led to the first use of the term "Vale do Sítio"?*</p>
+                                <div class="alternativas">
+                                    <p> - A) Introduction of the internet</p>
+                                    <p> - B) Rise of semiconductor technology</p>
+                                    <p> - C) Founding of major tech companies</p>
+                                    <p> - D) Discovery of the integrated circuit</p>
+                                </div>
+
+                                <p>6. *Preencha a lacuna com a forma correta do Presente Simples: "Silicon Valley ________ (to be) a global hub for technological innovation."*</p>
+                                <div class="alternativas">
+                                    <p> - A) Is</p>
+                                    <p> - B) Are</p>
+                                    <p> - C) Am</p>
+                                    <p> - D) Be</p>
+                                </div>
+
+                                <p>7. *Transforme a seguinte afirmação para a forma negativa do Presente Simples: "Silicon Valley covers an area of 1,854 square miles."*</p>
+                                <div class="alternativas">
+                                    <p> - A) Silicon Valley not cover an area of 1,854 square miles.</p>
+                                    <p> - B) Silicon Valley covers not an area of 1,854 square miles.</p>
+                                    <p> - C) Silicon Valley do not covers an area of 1,854 square miles.</p>
+                                    <p> - D) Silicon Valley does not cover an area of 1,854 square miles.</p>
+                                </div>
+
+                                <p>8. *Qual é a forma correta da pergunta para a afirmação: "The region's largest city is San Jose."?*</p>
+                                <div class="alternativas">
+                                    <p> - A) Is the region's largest city San Jose?</p>
+                                    <p> - B) San Jose is the region's largest city?</p>
+                                    <p> - C) The region's largest city San Jose is?</p>
+                                    <p> - D) Largest city is San Jose the region's?</p>
+                                </div>
+
+                                <p>9. *Escolha a opção correta que preenche a lacuna: "In 2022, there ________ (to be) 84 billionaires reportedly living in Silicon Valley."*</p>
+                                <div class="alternativas">
+                                    <p> - A) Was</p>
+                                    <p> - B) Were</p>
+                                    <p> - C) Is</p>
+                                    <p> - D) Be</p>
+                                </div>
+
+                                <p>5. *Reescreva a frase abaixo na forma afirmativa do Presente Simples: "There were a total of 38 Fortune 500 companies located in Silicon Valley as of 2020."*</p>
+                                <div class="alternativas">
+                                    <p> - A) There are a total of 38 Fortune 500 companies located in Silicon Valley as of 2020.</p>
+                                    <p> - B) There was a total of 38 Fortune 500 companies located in Silicon Valley as of 2020.</p>
+                                    <p> - C) There be a total of 38 Fortune 500 companies located in Silicon Valley as of 2020.</p>
+                                    <p> - D) There is a total of 38 Fortune 500 companies located in Silicon Valley as of 2020.</p>
+                                </div>
+
+
+                            </div>
+
+                            <p><b>Gabarito das Questões</b></p>
+                                <div class="gabarito">
+                                    <div class="col1">
+                                        <p>1 -  C )</p>
+                                        <p>2 -  B )</p>
+                                        <p>3 -  A )</p>
+                                        <p>4 -  B )</p>
+                                        <p>5 -  D )</p>
+                                    </div>
+
+                                    <div class="col2">
+                                        <p>6 -  A )</p>
+                                        <p>7 -  D )</p>
+                                        <p>8 -  B )</p>
+                                        <p>9 -  B )</p>
+                                        <p>10 -  B )</p>
+                                    </div>
+                                    
+                                    
+                                    
+                                </div>
+                                
                         </div>
                         
                     </div>

@@ -12,6 +12,8 @@ body{
 header{
     padding-inline: 16px;
 
+
+
 }
 
 a{
@@ -29,6 +31,7 @@ a{
     justify-content: space-between;
     align-items: center;
 
+
 }
 
 .logo img{
@@ -39,13 +42,31 @@ a{
     
 }
 
+.langs{
+
+    background: #e0e0e0;
+    box-shadow:  5px 5px 10px #9c9c9c,
+             -5px -5px 10px #f3f3f3;
+    padding: 10px 10px 4px 10px;
+    border-radius: 10px;
+}
+
+
+.langs a img{
+    width: 25px;
+    padding: 0;
+    margin: 0 2px;
+}
+
+
 .nav-list{
     display: flex;
+    align-items: center;
     gap: 32px;
     list-style: none;
 }
 
-.nav-list a{
+.nav-list li a{
     font-size: 18px;
     color: #131313;
     padding-block: 16px;
@@ -368,7 +389,18 @@ main .container{
         pointer-events: none;
     }
 
-    .nav-list a{
+    .langs{
+        background: #131313;
+        box-shadow:  5px 5px 10px #0a0a0a,
+             -5px -5px 10px #1b1b1b;
+    }
+
+    .langs a img{
+        width: 30px;
+    }
+
+    .nav-list li a{
+        margin-top: 20px;
         font-size: 24px;
         opacity: 0;
         color: #e0e0e0;

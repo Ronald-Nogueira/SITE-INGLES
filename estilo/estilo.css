@@ -42,22 +42,6 @@ a{
     
 }
 
-.langs{
-
-    background: #e0e0e0;
-    box-shadow:  5px 5px 10px #9c9c9c,
-             -5px -5px 10px #f3f3f3;
-    padding: 10px 10px 4px 10px;
-    border-radius: 10px;
-}
-
-
-.langs a img{
-    width: 25px;
-    padding: 0;
-    margin: 0 2px;
-}
-
 
 .nav-list{
     display: flex;
@@ -131,7 +115,7 @@ main{
     height: 1100px;
 }
 .questao{
-    height: 1300px;
+    height: 450px;
 }
 .sobre{
     height: 500px;
@@ -324,7 +308,7 @@ main .container{
         height: 2150px;
     }
     .questao{
-        height: 1500px;
+        height: 500px;
     }
     main .container{
         position: absolute;
@@ -528,29 +512,8 @@ iframe{
 
 
 
-.container-questoes{
-    width: 500px;
-    height: 1200px;
 
-    border-radius: 42px;
-    background: #e0e0e0;
-    box-shadow:  20px 20px 60px #acacac,
-             -20px -20px 60px #ffffff;
 
-    display: flex;
-    justify-content: space-around;
-    align-items: start;
-    text-align: start;
-    flex-direction: column;
-    letter-spacing: 2px;
-    padding: 20px;
-}
-.questoes p{
-    font-size: 13px;
-}
-.alternativas{
-    margin-bottom: 20px;
-}
 
 
 
@@ -680,6 +643,84 @@ footer {
 
     .container-questoes{
         width: 90%;
-        height: 1300px;
+        height: 500px;
     }
 }
+
+
+
+
+
+
+.questao .content{
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #acacac,
+             -20px -20px 60px #ffffff;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    gap: 10px;
+  }
+  
+
+  
+  .answers {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .answer {
+    width: 270px;
+    text-align: start;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #131313;
+
+  }
+  
+  .finish {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .finish button {
+    text-align: center;
+  }
+
+
+
+
+
+.quest-qtd{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+  /* Adicione essas regras ao seu CSS para destacar visualmente as opções corretas e incorretas */
+.answered {
+    pointer-events: none; /* Impede cliques adicionais após a resposta */
+  }
+  
+  .correct {
+    background-color: #4caf50; /* Verde para opção correta */
+    color: #fff;
+  }
+  
+  .incorrect {
+    background-color: #ff6961; /* Vermelho para opção incorreta */
+    color: #fff;
+  }
+  

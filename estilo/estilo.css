@@ -601,7 +601,9 @@ iframe{
     font-size: 13px;
 }
 
-footer {
+footer{
+    position: absolute;
+    bottom: 0;
     background: #131313;
     color: #9e9e9e;
     padding: 15px 0;
